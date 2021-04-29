@@ -10,7 +10,7 @@ SELECT COUNT(*) as NumOrders
 FROM Orders 
 WHERE ShipperID = (SELECT ShipperID FROM Shippers WHERE ShipperName = "Speedy Express");
 ```
-#### Result:
+### Result:
 Number of Records: 1  
 
 **NumOrders**  
@@ -28,7 +28,7 @@ HAVING COUNT(*) = (	SELECT MAX(numberOrders) FROM (	SELECT EmployeeID, COUNT(Ord
 FROM Orders 
 GROUP BY EmployeeID) maxOrders);
 ```
-#### Result:
+### Result:
 Number of Records: 1  
 
 **LastName**  
@@ -58,7 +58,7 @@ INNER JOIN (
 ON mP.ProductID = p.ProductID
 ```
 
-#### Result:
+### Result:
 Number of Records: 1  
 
 **ProductName**  
