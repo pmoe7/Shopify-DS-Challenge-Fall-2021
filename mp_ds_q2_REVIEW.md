@@ -13,9 +13,7 @@ WHERE ShipperID = (SELECT ShipperID FROM Shippers WHERE ShipperName = "Speedy Ex
 ### Result:
 Number of Records: 1  
 
-**NumOrders**  
-
-54
+**NumOrders:** 54
 
 
 ### B) What is the last name of the employee with the most orders?
@@ -31,9 +29,7 @@ GROUP BY EmployeeID) maxOrders);
 ### Result:
 Number of Records: 1  
 
-**LastName**  
-
-Peacock
+**LastName:** Peacock
 
 
 ### C) What product was ordered the most by customers in Germany?
@@ -61,6 +57,4 @@ ON mP.ProductID = p.ProductID
 ### Result:
 Number of Records: 1  
 
-**ProductName**  
-
-Boston Crab Meat
+**ProductName:** Boston Crab Meat
