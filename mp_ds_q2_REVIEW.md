@@ -11,8 +11,10 @@ FROM Orders
 WHERE ShipperID = (SELECT ShipperID FROM Shippers WHERE ShipperName = "Speedy Express");
 ```
 ##### Result:
-Number of Records: 1
-**NumOrders**
+Number of Records: 1  
+
+**NumOrders**  
+
 54
 
 
@@ -27,8 +29,10 @@ FROM Orders
 GROUP BY EmployeeID) maxOrders);
 ```
 ##### Result:
-Number of Records: 1
-**LastName**
+Number of Records: 1  
+
+**LastName**  
+
 Peacock
 
 
@@ -55,6 +59,8 @@ ON mP.ProductID = p.ProductID
 ```
 
 ##### Result:
-Number of Records: 1
-**ProductName**
+Number of Records: 1  
+
+**ProductName**  
+
 Boston Crab Meat
