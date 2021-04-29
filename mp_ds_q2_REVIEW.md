@@ -10,10 +10,10 @@ SELECT COUNT(*) as NumOrders
 FROM Orders 
 WHERE ShipperID = (SELECT ShipperID FROM Shippers WHERE ShipperName = "Speedy Express");
 ```
-##### Result:
-Number of Records: 1
-**NumOrders**
-54
+### Result:
+Number of Records: 1  
+
+**NumOrders:** 54
 
 
 ### B) What is the last name of the employee with the most orders?
@@ -26,10 +26,10 @@ HAVING COUNT(*) = (	SELECT MAX(numberOrders) FROM (	SELECT EmployeeID, COUNT(Ord
 FROM Orders 
 GROUP BY EmployeeID) maxOrders);
 ```
-##### Result:
-Number of Records: 1
-**LastName**
-Peacock
+### Result:
+Number of Records: 1  
+
+**LastName:** Peacock
 
 
 ### C) What product was ordered the most by customers in Germany?
@@ -54,7 +54,7 @@ INNER JOIN (
 ON mP.ProductID = p.ProductID
 ```
 
-##### Result:
-Number of Records: 1
-**ProductName**
-Boston Crab Meat
+### Result:
+Number of Records: 1  
+
+**ProductName:** Boston Crab Meat
