@@ -1,6 +1,5 @@
 # Shopify Fall 2021 Data Science Intern Challenge
 ### By Mohammed Perves
-### 4th Year BBA & CS Student at Wilfrid Laurier University
 
 ## Question 2
 ### A) How many orders were shipped by Speedy Express in total?
